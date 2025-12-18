@@ -1,0 +1,98 @@
+/* MAIN BACKGROUND */
+.dashboard {
+    min-height: 100vh;
+    background-image: url("/images/dashboard-image.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* DARK OVERLAY */
+  .dashboard-overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  /* CARD */
+  .dashboard-card {
+    background: #ffffff;
+    max-width: 520px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  /* TEXT STYLES */
+  .dashboard-title {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .dashboard-subtitle {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .dashboard-heading {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .dashboard-text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  .dashboard-list {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+  
+  /* ================= RESPONSIVE ================= */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .dashboard-title {
+      font-size: 22px;
+    }
+  
+    .dashboard-heading {
+      font-size: 20px;
+    }
+  
+    .dashboard-card {
+      padding: 20px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .dashboard-title {
+      font-size: 20px;
+    }
+  
+    .dashboard-heading {
+      font-size: 18px;
+    }
+  
+    .dashboard-subtitle,
+    .dashboard-text,
+    .dashboard-list {
+      font-size: 14px;
+    }
+  
+    .dashboard-overlay {
+      padding: 20px 12px;
+    }
+  }
+  

@@ -1,0 +1,139 @@
+/* PAGE WRAPPER */
+.workspace-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #eef2f3, #d9e4ec);
+    padding: 20px;
+  }
+  
+  /* CARD */
+  .workspace-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 0.5s ease;
+  }
+  
+  /* TITLE */
+  .workspace-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  .workspace-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+  
+  /* DIVIDER */
+  .divider {
+    margin: 25px 0;
+    border: none;
+    height: 1px;
+    background: #e0e0e0;
+  }
+  
+  /* STEPS */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .step {
+    padding: 20px;
+    border-radius: 14px;
+    background: #f9fafb;
+    border-left: 5px solid #4caf50;
+  }
+  
+  .step.result {
+    background: #e8f5e9;
+    border-left-color: #2e7d32;
+  }
+  
+  .step-number {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4caf50;
+    text-transform: uppercase;
+  }
+  
+  .step h2 {
+    margin: 6px 0;
+    font-size: 20px;
+    color: #222;
+  }
+  
+  .step p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* ANIMATION */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ============ RESPONSIVE ============ */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .workspace-card {
+      padding: 30px;
+    }
+  
+    .workspace-title {
+      font-size: 26px;
+    }
+  
+    .step h2 {
+      font-size: 18px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .workspace-card {
+      padding: 22px;
+      border-radius: 14px;
+    }
+  
+    .workspace-title {
+      font-size: 22px;
+    }
+  
+    .workspace-subtitle {
+      font-size: 14px;
+    }
+  
+    .step {
+      padding: 16px;
+    }
+  
+    .step h2 {
+      font-size: 16px;
+    }
+  
+    .step p {
+      font-size: 14px;
+    }
+  }
+  

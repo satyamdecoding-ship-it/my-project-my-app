@@ -1,0 +1,104 @@
+/* PAGE BACKGROUND */
+.task-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/task-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+  
+  /* CARD */
+  .task-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* TITLE */
+  .task-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  /* FORM */
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* INPUTS */
+  .task-input,
+  .task-textarea,
+  .task-select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .task-textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* BUTTON */
+  .task-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .task-button:hover {
+    background: #45a049;
+  }
+  
+  /* ================= RESPONSIVE ================= */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    .task-card {
+      padding: 30px;
+    }
+  
+    .task-title {
+      font-size: 24px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .task-card {
+      padding: 20px;
+    }
+  
+    .task-title {
+      font-size: 22px;
+    }
+  
+    .task-input,
+    .task-textarea,
+    .task-select,
+    .task-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

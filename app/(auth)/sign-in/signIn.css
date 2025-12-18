@@ -1,0 +1,120 @@
+/* signIn.css */
+
+/* RESET & GLOBAL */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+  }
+  
+  /* MAIN CONTAINER */
+  .signin-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f0f4ff 0%, #eef2ff 100%);
+    padding: 16px;
+  }
+  
+  /* FORM CONTAINER */
+  .signin-container {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  /* TITLE */
+  .signin-title {
+    font-size: clamp(1.8rem, 5vw, 2.2rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #111827;
+  }
+  
+  /* ERROR MESSAGE */
+  .signin-error {
+    color: red;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  /* INPUTS */
+  .signin-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    color: #000;
+  }
+  
+  /* BUTTON */
+  .signin-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #111827;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .signin-btn:hover {
+    background: #4f46e5;
+  }
+  
+  .signin-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  /* FOOTER INFO */
+  .signin-footer {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  .signin-footer strong {
+    color: #111827;
+  }
+  
+  /* RESPONSIVE BREAKPOINTS */
+  
+  /* TABLET */
+  @media (min-width: 768px) {
+    .signin-container {
+      padding: 36px;
+    }
+  }
+  
+  /* LAPTOP */
+  @media (min-width: 1024px) {
+    .signin-container {
+      max-width: 450px;
+    }
+  }
+  
+  /* DESKTOP */
+  @media (min-width: 1280px) {
+    .signin-container {
+      max-width: 500px;
+    }
+  }
+  
