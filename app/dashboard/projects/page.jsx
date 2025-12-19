@@ -1,9 +1,5 @@
 
 
-
-
-
-
 import "./projects.css";
 import { getProjectTasks, deleteTask } from "@/app/actions/taskActions";
 
