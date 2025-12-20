@@ -11,11 +11,11 @@ export async function login(formData: FormData) {
 
   const response = NextResponse.redirect(new URL(from, "http://localhost:3000"));
 
-  // ✅ Set cookie in response
+  
   response.cookies.set("token", "signed-in-example-token", {
     httpOnly: true,
     path: "/",
-    maxAge: 60 * 60 * 24 * 7, // 7 days
+    maxAge: 60 * 60 * 24 * 7, 
   });
 
   return response;

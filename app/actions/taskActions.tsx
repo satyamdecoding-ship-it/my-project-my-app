@@ -5,7 +5,6 @@ import Task from "@/app/model/Task";
 import mongoose from "mongoose";
 import { revalidatePath } from "next/cache";
 
-/* CREATE */
 export async function createTask(formData: FormData) {
   await dbConnect();
 
@@ -37,7 +36,7 @@ export async function createTask(formData: FormData) {
   return JSON.parse(JSON.stringify(task));
 }
 
-/* GET TASKS */
+
 export async function getProjectTasks(projectId: string) {
   await dbConnect();
 
@@ -54,7 +53,6 @@ export async function getProjectTasks(projectId: string) {
   return tasks;
 }
 
-/* GET SINGLE */
 export async function getTaskById(id: string) {
   await dbConnect();
 
@@ -71,7 +69,7 @@ export async function getTaskById(id: string) {
   return JSON.parse(JSON.stringify(task));
 }
 
-/* DELETE */
+
 export async function deleteTask(taskId: string) {
   await dbConnect();
 
@@ -85,7 +83,7 @@ export async function deleteTask(taskId: string) {
   return { success: true };
 }
 
-/* UPDATE */
+
 export async function updateTask(id: string, data: any) {
   await dbConnect();
 

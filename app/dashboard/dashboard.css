@@ -1,4 +1,4 @@
-/* MAIN BACKGROUND */
+
 .dashboard {
     min-height: 100vh;
     background-image: url("/images/dashboard-image.jpeg");
@@ -6,8 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  
-  /* DARK OVERLAY */
+
   .dashboard-overlay {
     min-height: 100vh;
     width: 100%;
@@ -17,7 +16,6 @@
     padding: 40px 20px;
   }
   
-  /* CARD */
   .dashboard-card {
     background: #ffffff;
     max-width: 520px;
@@ -31,7 +29,7 @@
     text-align: center;
   }
   
-  /* TEXT STYLES */
+
   .dashboard-title {
     font-size: 26px;
     font-weight: bold;

@@ -7,13 +7,13 @@ import "./dashboard.css";
 export default function DashboardPage() {
   const router = useRouter();
 
-  // Inner component to safely use useSearchParams
+
   const DashboardContent = () => {
     const searchParams = useSearchParams();
     const username = searchParams.get("username");
 
     useEffect(() => {
-      // Redirect to sign-in if username is missing
+   
       if (!username) {
         router.push("/sign-in");
       }
@@ -64,6 +64,8 @@ export default function DashboardPage() {
     </Suspense>
   );
 }
+
+
 
 
 

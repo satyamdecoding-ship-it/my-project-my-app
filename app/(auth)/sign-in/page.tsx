@@ -5,7 +5,7 @@ import React, { FormEvent, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import "./signIn.css";
 
-/* -------------------- SIGN IN CONTENT -------------------- */
+
 function SignInContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -28,7 +28,7 @@ function SignInContent() {
     const email = formData.get("email")?.toString().trim();
     const password = formData.get("password")?.toString().trim();
 
-    // ✅ ONLY ALLOW THESE CREDENTIALS
+  
     if (email === "user@example.com" && password === "password123") {
       router.push(
         `/dashboard?username=${encodeURIComponent(username || "User")}`
@@ -48,7 +48,7 @@ function SignInContent() {
         {errorMsg && <div className="signin-error">{errorMsg}</div>}
 
         <form onSubmit={handleLogin}>
-          {/* Username */}
+         
           <div style={{ marginBottom: 16 }}>
             <label>
               Username
@@ -62,7 +62,7 @@ function SignInContent() {
             </label>
           </div>
 
-          {/* Email */}
+ 
           <div style={{ marginBottom: 16 }}>
             <label>
               Email
@@ -75,7 +75,7 @@ function SignInContent() {
             </label>
           </div>
 
-          {/* Password */}
+     
           <div style={{ marginBottom: 16 }}>
             <label>
               Password
@@ -103,7 +103,7 @@ function SignInContent() {
   );
 }
 
-/* -------------------- PAGE EXPORT -------------------- */
+
 export default function SignInPage() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -111,6 +111,7 @@ export default function SignInPage() {
     </Suspense>
   );
 }
+
 
 
 

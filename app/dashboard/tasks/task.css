@@ -1,4 +1,4 @@
-/* PAGE BACKGROUND */
+
 .task-page {
     min-height: 100vh;
     display: flex;
@@ -10,7 +10,7 @@
     padding: 20px;
   }
   
-  /* CARD */
+
   .task-card {
     background: rgba(255, 255, 255, 0.95);
     padding: 40px;
@@ -20,7 +20,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   }
   
-  /* TITLE */
+
   .task-title {
     text-align: center;
     font-size: 28px;
@@ -29,14 +29,14 @@
     color: #333;
   }
   
-  /* FORM */
+
   .task-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
-  /* INPUTS */
+
   .task-input,
   .task-textarea,
   .task-select {
@@ -52,7 +52,7 @@
     resize: vertical;
   }
   
-  /* BUTTON */
+
   .task-button {
     width: 100%;
     padding: 12px;
@@ -69,10 +69,7 @@
   .task-button:hover {
     background: #45a049;
   }
-  
-  /* ================= RESPONSIVE ================= */
-  
-  /* Tablets */
+ 
   @media (max-width: 768px) {
     .task-card {
       padding: 30px;
@@ -83,7 +80,7 @@
     }
   }
   
-  /* Mobile */
+
   @media (max-width: 480px) {
     .task-card {
       padding: 20px;

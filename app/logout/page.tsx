@@ -7,9 +7,9 @@ export default function LogoutPage() {
   const router = useRouter();
 
   useEffect(() => {
-    // Clear session/localStorage or cookies
-    localStorage.removeItem("username"); // example
-    // Redirect to Sign-In page
+   
+    localStorage.removeItem("username"); 
+   
     router.push("/sign-in");
   }, []);
 

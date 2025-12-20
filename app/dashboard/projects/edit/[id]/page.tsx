@@ -2,7 +2,7 @@ import { getTaskById, updateTask } from "@/app/actions/taskActions";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic"; // ensures server fetch every time
+export const dynamic = "force-dynamic";
 
 interface EditPageProps {
   params: Promise<{
@@ -11,17 +11,17 @@ interface EditPageProps {
 }
 
 export default async function EditTaskPage(props: EditPageProps) {
-  // ✅ unwrap params promise
+ 
   const { id: taskId } = await props.params;
 
   if (!taskId) return <p>Task ID is missing!</p>;
 
-  // ✅ fetch task from DB
+ 
   const task = await getTaskById(taskId);
 
-  // ✅ server action to update task
+
   async function handleUpdateTask(formData: FormData) {
-    "use server"; // Important for Next.js server action
+    "use server"; 
 
     const updatedData = {
       title: formData.get("title")?.toString(),
@@ -31,10 +31,10 @@ export default async function EditTaskPage(props: EditPageProps) {
 
     await updateTask(taskId, updatedData);
 
-    // revalidate the projects page so changes appear immediately
+
     revalidatePath("/dashboard/projects");
 
-    // optional: redirect back to projects page after update
+ 
     redirect("/dashboard/projects");
   }
 
