@@ -73,28 +73,11 @@
 
 "use client";
 
-import React, { useEffect, useState } from "react";
-
 export default function DashboardPage() {
-  const [username, setUsername] = useState("User");
-
-  useEffect(() => {
-    // Optional: You can fetch session or username from cookie
-    const token = document.cookie
-      .split("; ")
-      .find((row) => row.startsWith("token="))
-      ?.split("=")[1];
-
-    if (token) {
-      setUsername("Logged User");
-    }
-  }, []);
-
   return (
     <main style={{ padding: "2rem" }}>
-      <h1>Welcome, {username}!</h1>
+      <h1>Welcome!</h1>
       <p>You are now logged in successfully.</p>
     </main>
   );
 }
-
